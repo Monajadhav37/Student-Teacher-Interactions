@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('blue screen.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center; 
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-container {
+            display: flex;
+            gap: 20px; 
+        }
+        
+        .profile-card {
+            transition: transform 0.3s, box-shadow 0.3s; 
+            border: 1px solid #ddd; 
+            border-radius: 5px;
+            overflow: hidden;
+            width: 18rem; /* Set a fixed width for the cards */
+        }
+
+        .profile-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto; 
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+    </style>
+</head> 
+<body>
+    <div class="card-container">
+        <div class="card profile-card">
+            <img src="student1.jpeg" class="card-img-top" alt="Student 1">
+            <div class="card-body">
+                <h5 class="card-title">Jaya</h5>
+                <p>ID: 12345</p>
+                <p>e-mail: jaya@gmail.com</p>
+                <p>Weakness: Math</p>
+                <p>Grades: 80%</p>
+                <button class="btn btn-primary" onclick="window.open('student1questions.html')">Ask Question</button>
+            </div>
+        </div>
+
+        <div class="card profile-card">
+            <img src="student2.jpeg" class="card-img-top" alt="Student 2">
+            <div class="card-body">
+                <h5 class="card-title">Madiha</h5>
+                <p>ID: 67890</p>
+                <p>e-mail: madiha@gmail.com</p>
+                <p>Weakness: Science</p>
+                <p>Grades: 70%</p>
+                <button class="btn btn-primary" onclick="window.open('student2questions.html')">Ask Question</button><br>
+            </div>
+        </div>
+
+        
+        <div class="card profile-card">
+            <img src="student3.jpeg" class="card-img-top" alt="Student 3">
+            <div class="card-body">
+                <h5 class="card-title">Varsha</h5>
+                <p>ID: 34567</p>
+                <p>e-mail: varsha@gmail.com</p>
+                <p>Weakness: English</p>
+                <p>Grades: 90%</p>
+                <button class="btn btn-primary" onclick="window.open('student3questions.html')">Ask Question</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

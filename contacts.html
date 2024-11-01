@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Contact Us</title>
+    <style>
+        body {
+            background-image: url('blue screen.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center; 
+            height: 100vh;
+            margin: 0; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .about-section, .contact-column {
+            flex: 1;  
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+        }
+        .values, .achievements {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-left: 4px solid #007bff;
+        }
+        .contact-item {
+            margin-bottom: 15px;
+        }
+        .contact-item label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-item input, .contact-item textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-item button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-item button:hover {
+            background-color: #0056b3;
+        }
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="about-section">
+        <h2>About Us</h2>
+        
+        <p><strong>Mission Statement:</strong> Our mission is to provide quality education and resources to empower students and teachers alike.</p>
+
+        <p><strong>History:</strong> Founded in 2023, we started as a small tutoring center and have grown into a comprehensive educational platform serving thousands of students worldwide.</p>
+
+        <h3>Our Values</h3>
+        <div class="values">
+            <ul>
+                <li>Integrity</li>
+                <li>Innovation</li>
+                <li>Collaboration</li>
+                <li>Excellence</li>
+            </ul>
+        </div>
+
+        <h3>Achievements</h3>
+        <div class="achievements">
+            <ul>
+                <li>Awarded 'Best Educational Service' in 2024</li>
+                <li>Partnerships with leading educational institutions</li>
+            </ul>
+        </div>
+    </div>
+
+ <div class="contact-column">
+        <h2>Contact Us</h2>
+
+        <form>
+            <div class="contact-item">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="contact-item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="contact-item">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div class="contact-item">
+                <button>Send Message</button>
+            </div>
+        </form>
+
+        <h3>Get in Touch</h3>
+        <p><strong>Email:</strong> contact@kmit.com</p>
+        <p><strong>Phone:</strong> +91 234 567 890</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMIT College - Teachers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('blue screen.jpeg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            height: 100vh;
+            margin: 0;
+            color: black;
+        }
+        .d-flex {
+            display: flex;
+            gap: 20px;
+        }
+        .profile-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid black;
+            border-radius: 5px; 
+            overflow: hidden;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+        }
+        .card-img-top {
+            width: 100%;
+            height: auto; 
+        }
+        .btn {
+            margin-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="teachers" class="mt-5">
+        <h2>Teachers</h2>
+        <div class="d-flex">
+            <div class="card profile-card" style="width: 18rem;">
+                <img src="lady1.png" class="card-img-top" alt="Teacher 1">
+                <div class="card-body">
+                    <h5 class="card-title">Meera</h5>
+                    <p>Subject: Math</p>
+                    <p>Skills: Expert in Math</p>
+                    <p>Email: meera@gmail.com</p>
+                    <p>Contact: 123-456-7890</p>
+                    <button class="btn btn-primary" onclick="window.open('meera.html')">Home work</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#meeraModal">Doubt Clearing</button>
+                </div>
+            </div>
+            <div class="card profile-card" style="width: 18rem;">
+                <img src="lady2.jpeg" class="card-img-top" alt="Teacher 2">
+                <div class="card-body">
+                    <h5 class="card-title">Sakura</h5>
+                    <p>Subject: Science</p>
+                    <p>Skills: Expert in Science</p>
+                    <p>Email: sakura@gmail.com</p>
+                    <p>Contact: 234-567-8901</p>
+                    <button class="btn btn-primary" onclick="window.open('sakura.html')">Home work</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#sakuraModal">Doubt Clearing</button>
+                </div>
+            </div>
+            <div class="card profile-card" style="width: 18rem;">
+                <img src="lady3.jpeg" class="card-img-top" alt="Teacher 3">
+                <div class="card-body">
+                    <h5 class="card-title">Ruby</h5>
+                    <p>Subject: English</p>
+                    <p>Skills: Expert in English</p>
+                    <p>Email: ruby@gmail.com</p>
+                    <p>Contact: 345-678-9012</p>
+                    <button class="btn btn-primary" onclick="window.open('ruby.html')">Home work</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#rubyModal">Doubt Clearing</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="meeraModal" tabindex="-1" role="dialog" aria-labelledby="meera ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="meeraModalLabel">Doubt Clearing - Meera</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contact: 123-456-7890</p>
+                    <p>Reference Videos:</p>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 1</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 2</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 3</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="sakuraModal" tabindex="-1" role="dialog" aria-labelledby="sakuraModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sakuraModalLabel">Doubt Clearing - Sakura</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contact: 234-567-8901</p>
+                    <p>Reference Videos:</p>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 1</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 2</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 3</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="rubyModal" tabindex="-1" role="dialog" aria-labelledby="rubyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rubyModalLabel">Doubt Clearing - Ruby</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contact: 345-678-9012</p>
+                    <p>Reference Videos:</p>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 1</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 2</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video 3</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
